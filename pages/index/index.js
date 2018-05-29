@@ -9,7 +9,7 @@ Page({
     winHeight: 0,
     // tab切换 
     currentTab: 0,
-    url: 'https://k3-mobile-new.leyecloud.com/',
+    url: 'xxx',
     navList:[],//头部导航
     hot:[],//热门
     news:[],//最新
