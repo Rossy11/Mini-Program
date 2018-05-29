@@ -1,0 +1,15 @@
+<view class='container'>
+  <view class='top'>
+    <image src='{{ imgUrl }}' class='img' bindtap="previewImage"></image>
+    <image src='{{ newImgUrl }}' class='imgnone' wx:if="{{key>0}}" bindload="changeImg"></image>
+  </view>
+  <view wx:for='{{keyinfo}}' class="section">
+    <view class='inputtitle'>{{item.key}}:</view>
+    <input type='text' class='searchInput' placeholder='{{item.placeholder}}' maxlength='{{item.limit}}' data-x-position='{{item.xPosition}}' data-y-position='{{item.yPosition}}' bindblur="bindKeyInput"/>
+  </view>
+
+  <view class='footer'>
+    <view class='back' bindtap='clickBack'>返回</view>
+    <view class='loadImg' bindtap='loadImg'>生成图片</view>
+  </view>
+</view>

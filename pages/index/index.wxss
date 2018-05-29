@@ -1,0 +1,63 @@
+/**index.wxss**/
+page{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  padding: 0;
+  margin: 0;
+}
+
+
+.swiper-tab{ 
+  width: 100%; 
+  border-bottom: 2rpx solid #eeeeee;
+  line-height: 40px;
+} 
+.swiper-tab-item{ 
+  font-size: 30rpx; 
+  display: inline-block;  
+  color: #666666; 
+  text-align: center;
+  margin-left: 40rpx;
+} 
+.on{ 
+  color: #f10b2e; 
+  border-bottom: 5rpx solid #f10b2e;
+} 
+ 
+.swiper-box{ 
+  display: block;
+  width: 100%;
+} 
+.section{
+  width: 100%;
+}
+.searchInput{
+  font-size: 30rpx;
+  border: 1px #666666 solid;
+  width: 88%;
+  margin: 35rpx;
+  padding-left: 10rpx;
+}
+.imgview{
+  width: 200rpx;
+  height: 260rpx;
+  border: 1px #666666 solid;
+  float: left;
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+}
+.img{
+  width: 100%;
+  height: 80%;
+}
+.textval{
+  font-size: 28rpx;
+  display:block;
+  text-align: center;
+}
+
+
+
+

@@ -1,0 +1,69 @@
+.container{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.top{
+  width: 100%;
+  height: 500rpx;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.imgnone{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.section{
+  width: 100%;
+  height: 100rpx;
+  border: 1px #ddd solid;
+  margin-top: 30rpx;
+  background: #fff
+}
+.inputtitle{
+  line-height: 100rpx;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  float: left;
+}
+.searchInput{
+  height: 100rpx;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  float: left;
+}
+.footer{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  border: 1px #ddd solid;
+}
+.back{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  background: #ddd;
+  color: #fff;
+}
+.loadImg{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  background: #199ed8;
+  color: #fff;
+}
+
+
+
+
+
+

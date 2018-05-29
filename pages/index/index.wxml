@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper-tab">
+    <view wx:for="{{navList}}" class="swiper-tab-item {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item.name}}</view>
+  </view>
+  <!-- <view class="section">
+    <input type='text' class='searchInput' placeholder='请输入搜索内容'/>
+  </view> -->
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-50}}px" bindchange="bindChange">
+    <swiper-item>
+      <view>
+        <view wx:for="{{hot}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
+          <image src='{{item.url}}' class='img'></image>
+          <text class='textval'>{{item.name}}</text>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view>
+        <view wx:for="{{news}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
+          <image src='{{item.url}}' class='img'></image>
+          <text class='textval'>{{item.name}}</text>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view>
+        <view wx:for="{{certificates}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
+          <image src='{{item.url}}' class='img'></image>
+          <text class='textval'>{{item.name}}</text>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view>
+        <view wx:for="{{kuso}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
+          <image src='{{item.url}}' class='img'></image>
+          <text class='textval'>{{item.name}}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+
+</view>
