@@ -38,7 +38,7 @@ Page({
       title: '生成中',
     })
     wx.request({
-      url: 'https://k3-mobile-new.leyecloud.com/wsc_template/',
+      url: 'xxx',
       data: {
         id: this.data.alldata.templateid,
         info: this.data.info
