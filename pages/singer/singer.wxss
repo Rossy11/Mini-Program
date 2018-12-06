@@ -1,0 +1,58 @@
+/* pages/singer/singer.wxss */
+.singers{
+  height: 140rpx;
+  border-bottom: 4rpx solid #f6f6f6;
+}
+.simg{
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  margin-left: 34rpx;
+}
+.stxt{
+  float: left;
+  line-height: 140rpx;
+  font-size: 32rpx;
+  margin-left: 30rpx;
+}
+.yimg{
+  width: 18rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 70rpx;
+}
+
+/* footer */
+.footer{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px #eeeeee solid;
+}
+.chooseSong{
+  width: 33.33%;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+  padding-top: 14rpx;
+}
+.chooseSongImg{
+  width: 58rpx;
+  height: 58rpx;
+}
+.chooseSongTxt{
+  font-size: 22rpx;
+  text-align: center;
+  color:#fe882d;
+  margin-top: -12rpx;
+}
+.chooseSongTxt2{
+  font-size: 22rpx;
+  text-align: center;
+  color:#b1b1b1;
+  margin-top: -12rpx;
+}

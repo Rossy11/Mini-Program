@@ -1,0 +1,28 @@
+<!--pages/singer/singer.wxml-->
+<view class="container boxshow">
+  <view class='singers' bindtap='clickStar'>
+    <image src='../../image/curry.jpg' class='simg'></image>
+    <view class='stxt'>koro1</view>
+    <image src='../../image/you.png' class='yimg'></image>
+  </view>
+  <view class='singers'>
+    <image src='../../image/curry.jpg' class='simg'></image>
+    <view class='stxt'>koro1</view>
+    <image src='../../image/you.png' class='yimg'></image>
+  </view>
+
+  <view class='footer'>
+    <view class='chooseSong' bindtap='clickChoose'>
+      <image src='../../image/a2.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt'>点歌</view>
+    </view>
+    <view class='chooseSong' bindtap='clickControl'>
+      <image src='../../image/a6.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>遥控</view>
+    </view>
+    <view class='chooseSong' bindtap='clickLink'>
+      <image src='../../image/a4.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>链接</view>
+    </view>
+  </view>
+</view>

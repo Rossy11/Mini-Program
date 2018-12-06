@@ -1,15 +1,39 @@
-<view class='container'>
-  <view class='top'>
-    <image src='{{ imgUrl }}' class='img' bindtap="previewImage"></image>
-    <image src='{{ newImgUrl }}' class='imgnone' wx:if="{{key>0}}" bindload="changeImg"></image>
+<!--pages/detail.wxml-->
+<wxs module="filter" src="../index/index.wxs"></wxs>
+<view class="container boxshow detail">
+  <view class='song' wx:for='{{songInfo}}'>
+    <view class='songInfo'>
+      <view class='songName'>{{item.name}}</view>
+      <view class='songer'>{{item.singer_names}}</view>
+    </view>
+    <view class='songBtn' data-singid='{{item.song_no}}' bindtap='clickBtnsong'>
+      <image src='{{filter.getStyle(selectIdList,item.song_no)?"../../image/b4.png":"../../image/b3.png"}}' class='songBtnImg'></image>
+      <view class='songBtnTxt'>{{filter.getClickNum(selectIdList,item.song_no)==0?plus:mark+filter.getClickNum(selectIdList,item.song_no)}}</view>
+    </view>
   </view>
-  <view wx:for='{{keyinfo}}' class="section">
-    <view class='inputtitle'>{{item.key}}:</view>
-    <input type='text' class='searchInput' placeholder='{{item.placeholder}}' maxlength='{{item.limit}}' data-x-position='{{item.xPosition}}' data-y-position='{{item.yPosition}}' bindblur="bindKeyInput"/>
+  <view class='tiping' wx:if='{{show}}'>
+    <image wx:if='{{showtip}}' src='../../image/load.png' class='loading'></image>
+    <view class='tip'>{{tip}}</view>
   </view>
 
+  <!-- 切歌 -->
+  <button class='changeSong'>
+    <image src='../../image/change.png' class='changeSongImg'></image>
+    <view class='changeSongTxt'>切歌</view>
+  </button>
+
   <view class='footer'>
-    <view class='back' bindtap='clickBack'>返回</view>
-    <view class='loadImg' bindtap='loadImg'>生成图片</view>
+    <view class='chooseSong' bindtap='clickChoose'>
+      <image src='../../image/a2.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt'>点歌</view>
+    </view>
+    <view class='chooseSong' bindtap='clickControl'>
+      <image src='../../image/a6.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>遥控</view>
+    </view>
+    <view class='chooseSong' bindtap='clickLink'>
+      <image src='../../image/a4.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>链接</view>
+    </view>
   </view>
 </view>

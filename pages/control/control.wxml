@@ -1,0 +1,52 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class='sings' bindtap='sing'>
+    <image class='imgs' src='../../image/yb.png'></image>
+    <view class='txt'>原/伴</view>
+  </view>
+  <view class='change' bindtap='changeSong'>
+    <image class='imgs' src='../../image/q.png'></image>
+    <view class='txt'>切歌</view>
+  </view>
+  <view class='change' bindtap='resing'>
+    <image class='imgs' src='../../image/cc.png'></image>
+    <view class='txt'>双人</view>
+  </view>
+  <view class='change' bindtap='barrage' wx:if="{{showInput}}">
+    <image class='imgs2' src='../../image/danmu.png'></image>
+    <view class='txt'>发弹幕</view>
+  </view>
+  <view class='effect'>
+    <view class='ebtn1' bindtouchend='touchend' bindlongtap='effectMinlong' bindtap='effectMin' hover-class='hoverClass'>-</view>
+    <view class='ebtn2' bindtouchend='touchend' bindlongtap='effectPluslong' bindtap='effectPlus' hover-class='hoverClass'>+</view>
+    <view class='txt2'>效果音</view>
+  </view>
+  <view class='effect2'>
+    <view class='ebtn1' bindtouchend='touchend' bindlongtap='macMinlong' bindtap='macMin' hover-class='hoverClass'>-</view>
+    <view class='ebtn2' bindtouchend='touchend' bindlongtap='macPluslong' bindtap='macPlus' hover-class='hoverClass'>+</view>
+    <view class='txt2'>麦克风</view>
+  </view>
+  <view class='effect2'>
+    <view class='ebtn1' bindtouchend='touchend' bindlongtap='musicMinlong' bindtap='musicMin' hover-class='hoverClass'>-</view>
+    <view class='ebtn2' bindtouchend='touchend' bindlongtap='musicPluslong' bindtap='musicPlus' hover-class='hoverClass'>+</view>
+    <view class='txt2'>音乐</view>
+  </view>
+  <!-- 弹幕 -->
+  <view class='alerts' wx:if="{{showInput}}" bindtap='hiddleInput'>
+    <view class='tabInput' catchtap='showInputs'>
+      <view class='topInput'>
+        <input placeholder="说出你的想法..." class='inputs' focus maxlength='25' cursor-spacing='45' bindinput='inputVal' value='{{inputVal}}'/>
+        <view class='send'>发送</view>
+      </view>
+      <view class='botView'>
+        <view class='cir color1' style='border:1px solid {{c[0]}}' bindtap='setBorder' data-color='1'></view>
+        <view class='cir color2' style='border:1px solid {{c[1]}}' bindtap='setBorder' data-color='2'></view>
+        <view class='cir color3' style='border:1px solid {{c[2]}}' bindtap='setBorder' data-color='3'></view>
+        <view class='cir color4' style='border:1px solid {{c[3]}}' bindtap='setBorder' data-color='4'></view>
+        <view class='cir color5' style='border:1px solid {{c[4]}}' bindtap='setBorder' data-color='5'></view>
+        <view class='cir color6' style='border:1px solid {{c[5]}}' bindtap='setBorder' data-color='6'></view>
+      </view>
+    </view>
+  </view>
+
+</view>

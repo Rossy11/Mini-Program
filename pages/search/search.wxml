@@ -1,0 +1,77 @@
+<!--pages/search/search.wxml-->
+<wxs module="filter" src="../index/index.wxs"></wxs>
+<view class="container topborder">
+  <!-- header -->
+  <view class='header'>
+    <input class='search' placeholder='搜索' focus bindinput='inputVal' value='{{inputVal}}' bindconfirm="searchSong"/>
+    <icon type="search" size="20" class='searchImg' color='#c4c4c4' />
+    <view class='searchImg2' bindtap='clearInput'>
+      <image src='../../image/xx.png' class='simgs'></image>
+    </view>
+    <view class='searchbtn' bindtap='searchSong'>
+      <image src='../../image/sbg.png' class='sbtnimg'></image>
+      <view class='sbtntxt'>搜索</view>
+    </view>
+  </view>
+  <!-- 实时搜索的歌曲 -->
+  <view wx:if='{{false}}'>
+    <view class='onesong'>
+      <icon type="search" size="20" color='#c4c4c4' class='sicon' />
+      <text class='stxt'>k歌之王</text>
+    </view>
+    <view class='onesong'>
+      <icon type="search" size="20" color='#c4c4c4' class='sicon' />
+      <text class='stxt'>k歌之王</text>
+    </view>
+    <view class='onesong'>
+      <icon type="search" size="20" color='#c4c4c4' class='sicon' />
+      <text class='stxt'>k歌之王</text>
+    </view>
+    <view class='clears'>
+      <image class='simg' src='../../image/c.png'></image>
+      <text class='ctxt'>清空搜索记录</text>
+    </view>
+  </view>
+  <!-- 点击搜索后的歌曲 -->
+  <view>
+    <view class='seaown' bindtap='clickSinger' wx:if='{{false}}'>
+      <image src='../../image/curry.jpg' class='seaimg'></image>
+      <text class='seaman'>koro1</text>
+      <image src='../../image/you.png' class='rimg'></image>
+    </view>
+    <view class='song' wx:for='{{searchList}}'>
+      <view class='songInfo'>
+        <view class='songName'>{{item.name}}</view>
+        <view class='songer'>{{item.singer_names}}</view>
+      </view>
+      <view class='songBtn' bindtap='clickSong' data-songid='{{item.song_no}}'>
+        <image src='{{filter.getStyle(selectIdList,item.song_no)?"../../image/b4.png":"../../image/b3.png"}}' class='songBtnImg'></image>
+        <view class='songBtnTxt'>{{filter.getClickNum(selectIdList,item.song_no)==0?plus:mark+filter.getClickNum(selectIdList,item.song_no)}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='tiping' wx:if='{{showtip}}'>
+    <image wx:if='{{showtipimg}}' src='../../image/load.png' class='loading'></image>
+    <view class='tip'>{{tip}}</view>
+  </view>
+
+
+
+
+
+
+  <view class='footer'>
+    <view class='chooseSong' bindtap='clickChoose'>
+      <image src='../../image/a2.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt'>点歌</view>
+    </view>
+    <view class='chooseSong' bindtap='clickControl'>
+      <image src='../../image/a6.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>遥控</view>
+    </view>
+    <view class='chooseSong' bindtap='clickLink'>
+      <image src='../../image/a4.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>链接</view>
+    </view>
+  </view>
+</view>

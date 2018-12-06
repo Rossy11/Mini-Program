@@ -1,0 +1,140 @@
+/* pages/rank/rank.wxss */
+.header{
+  height: 60rpx;
+  position: relative;
+  margin-top: 20rpx;
+}
+.search{
+  width: 450rpx;
+  height: 60rpx;
+  border: 1px solid #eaeaea;
+  padding-left: 60rpx;
+  color: #eaeaea;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  border-radius: 30rpx;
+}
+.searchImg{
+  position: absolute;
+  top: 15rpx;
+  left: 30rpx;
+}
+.searchImg2{
+  position: absolute;
+  top: 15rpx;
+  right: 250rpx;
+}
+/* bitton去掉边框 */
+button::after{ 
+  display: none;
+}
+.haselect{
+  width: 160rpx;
+  height: 60rpx;
+  border: 1px solid #eaeaea;
+  border-radius: 30rpx;
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+}
+.selectImg{
+  width: 34rpx;
+  height: 38rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 20rpx
+}
+.selectxt{
+  font-size: 24rpx;
+  float: left;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+  color: #a1a1a1;
+}
+.selectnum{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #ff8b2b;
+  font-size: 22rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 40rpx;
+  position: absolute;
+  top: -20rpx;
+  right: -10rpx;
+}
+.rankList{
+  height: 300rpx;
+  border-bottom: 4rpx #f6f6f6 solid;
+}
+.hot{
+  font-size: 30rpx;
+  margin-top: 28rpx;
+  margin-left: 20rpx;
+}
+.tip{
+  font-size: 24rpx;
+  color: #c8c8c8
+}
+.hotImg{
+  width: 200rpx;
+  height: 200rpx;
+  float: left;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+.hotImg2{
+  width: 18rpx;
+  height: 32rpx;
+  float: left;
+  margin-top: 100rpx;
+}
+.hotInfo{
+  width: 470rpx;
+  height: 200rpx;
+  float: left;
+  margin-top: 20rpx;
+  padding-top: 25rpx;
+}
+.info{
+  color: #717171;
+  font-size: 28rpx;
+  line-height: 50rpx
+}
+
+
+
+
+
+/* footer */
+.footer{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px #eeeeee solid;
+}
+.chooseSong{
+  width: 33.33%;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+  padding-top: 14rpx;
+}
+.chooseSongImg{
+  width: 58rpx;
+  height: 58rpx;
+}
+.chooseSongTxt{
+  font-size: 22rpx;
+  text-align: center;
+  color:#fe882d;
+  margin-top: -12rpx;
+}
+.chooseSongTxt2{
+  font-size: 22rpx;
+  text-align: center;
+  color:#b1b1b1;
+  margin-top: -12rpx;
+}

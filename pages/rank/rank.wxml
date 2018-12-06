@@ -1,0 +1,40 @@
+<!--pages/rank/rank.wxml-->
+<view class="container">
+  <view class='header'>
+    <input class='search' placeholder='搜索' bindtap='clickInput' disabled/>
+    <icon type="search" size="20" class='searchImg' color='#c4c4c4' />
+    <icon type="clear" size="18" class='searchImg2' color='#c4c4c4' />
+    <view class='haselect' bindtap='haselect'>
+      <image class='selectImg' src='../../image/select.png'></image>
+      <view class='selectxt'>已点</view>
+      <view class='selectnum' wx:if='{{selectnum>0}}'>{{selectnum}}</view>
+    </view>
+  </view>
+  <view class='rankList'>
+    <view class='hot'>热歌榜 <text class='tip'>(每周更新)</text></view>
+    <view bindtap='clickHot'>
+      <image src='../../image/hot.png' class='hotImg'></image>
+      <view class='hotInfo'>
+        <view class='info'>{{song1}}</view>
+        <view class='info'>{{song2}}</view>
+        <view class='info'>{{song3}}</view>
+      </view>
+      <image src='../../image/you.png' class='hotImg2'></image>
+    </view>
+  </view>
+
+  <view class='footer'>
+    <view class='chooseSong' bindtap='clickChoose'>
+      <image src='../../image/a2.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt'>点歌</view>
+    </view>
+    <view class='chooseSong' bindtap='clickControl'>
+      <image src='../../image/a6.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>遥控</view>
+    </view>
+    <view class='chooseSong' bindtap='clickLink'>
+      <image src='../../image/a4.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>链接</view>
+    </view>
+  </view>
+</view>

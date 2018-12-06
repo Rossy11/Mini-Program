@@ -1,63 +1,368 @@
 /**index.wxss**/
-page{
-  padding: 0;
-  margin: 0;
+.pay{
+  height: 115rpx;
 }
-.container{
-  padding: 0;
-  margin: 0;
-}
-
-
-.swiper-tab{ 
-  width: 100%; 
-  border-bottom: 2rpx solid #eeeeee;
-  line-height: 40px;
-} 
-.swiper-tab-item{ 
-  font-size: 30rpx; 
-  display: inline-block;  
-  color: #666666; 
-  text-align: center;
-  margin-left: 40rpx;
-} 
-.on{ 
-  color: #f10b2e; 
-  border-bottom: 5rpx solid #f10b2e;
-} 
- 
-.swiper-box{ 
-  display: block;
-  width: 100%;
-} 
-.section{
-  width: 100%;
-}
-.searchInput{
-  font-size: 30rpx;
-  border: 1px #666666 solid;
-  width: 88%;
-  margin: 35rpx;
-  padding-left: 10rpx;
-}
-.imgview{
-  width: 200rpx;
-  height: 260rpx;
-  border: 1px #666666 solid;
+.erimg{
+  width: 84rpx;
+  height: 84rpx;
   float: left;
-  margin-left: 35rpx;
+  margin-top: 17rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative
+}
+.userAvatarUrl{
+  width: 84rpx;
+  height: 84rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.weltxt{
+  width: 357rpx;
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 115rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.payBtn{
+  width: 160rpx;
+  height: 60rpx;
+  float: left;
+  margin-left: 85rpx;
+  margin-top: 28rpx;
+  border-radius: 30rpx;
+  position: relative;
+}
+.pimg{
+  width: 160rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ptxt{
+  width: 160rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.tao{
+  width: 357rpx;
+  height: 115rpx;
+  float: left;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 56rpx;
+}
+.ttop{
+  width: 357rpx;
+  height: 56rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+.header{
+  height: 60rpx;
+  position: relative;
   margin-top: 20rpx;
 }
-.img{
-  width: 100%;
-  height: 80%;
+.big{
+  width: 750rpx;
+  height: 302rpx;
+  position: absolute;
+  top: -20rpx;
+  left: 0;
+  z-index: 10
 }
-.textval{
-  font-size: 28rpx;
-  display:block;
+.search{
+  width: 380rpx;
+  height: 60rpx;
+  border: 1px solid #fff;
+  padding-left: 70rpx;
+  color: #fff;
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  border-radius: 30rpx;
+  z-index: 100;
+  position: relative
+}
+.searchImg{
+  position: absolute;
+  top: 15rpx;
+  left: 30rpx;
+  z-index: 100
+}
+.shareBtn{
+  width: 80rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 0rpx;
+  right: 20rpx;
+  padding: 0;
+  background: none;
   text-align: center;
+  z-index: 100;
+}
+.shareImg{
+  width: 42rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0;
+  left: 20rpx;
+}
+.shareTxt{
+  font-size: 20rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  color: #fff;
+  z-index: 100;
+}
+/* bitton去掉边框 */
+button::after{ 
+  display: none;
+}
+.haselect{
+  width: 140rpx;
+  height: 60rpx;
+  border: 1px solid #fff;
+  border-radius: 30rpx;
+  position: absolute;
+  top: 0;
+  right: 120rpx;
+  z-index: 100
+}
+.selectImg{
+  width: 34rpx;
+  height: 38rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 20rpx
+}
+.selectxt{
+  font-size: 24rpx;
+  float: left;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+  color: #fff;
+}
+.selectnum{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 22rpx;
+  color: #ff6e00;
+  text-align: center;
+  line-height: 40rpx;
+  position: absolute;
+  top: -15rpx;
+  right: -10rpx;
+}
+.bigBtn{
+  height: 144rpx;
+  margin-top: 40rpx;
+}
+.leftBtn{
+  width: 300rpx;
+  height: 144rpx;
+  float: left;
+  margin-left: 44rpx;
+  border-radius: 15rpx;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+}
+.rightBtn{
+  width: 300rpx;
+  height: 150rpx;
+  float: left;
+  margin-left: 60rpx;
+  border-radius: 15rpx;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+}
+.btnImg1{
+  width: 118rpx;
+  height: 82rpx;
+  margin-top: 10rpx;
+  margin-left: 82rpx;
+}
+.btnImg2{
+  width: 134rpx;
+  height: 84rpx;
+  margin-top: 10rpx;
+  margin-left: 102rpx;
+}
+.btnTxt{
+  font-size: 30rpx;
+  line-height: 30rpx;
+  text-align: center
+}
+.line{
+  height: 20rpx;
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+  background: #f5f5f5;
+}
+.mySong{
+  margin-top: 70rpx;
+}
+.mySong2{
+  margin-top: 40rpx;
+}
+.mySongHead{
+  height: 74rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+.headtxt{
+  font-size: 28rpx;
+  border-left: 2px solid #ff6e00;
+  padding-left: 10rpx;
+  margin-left: 20rpx;
+}
+.song{
+  height: 110rpx;
+  border-bottom: 2px solid #f0f0f0;
+  position: relative;
+}
+.songInfo{
+  height: 100rpx;
+  padding-left: 30rpx;
+}
+.songName{
+  font-size: 30rpx;
+  line-height: 100rpx;
+  float: left;
+}
+.songer{
+  font-size: 22rpx;
+  color: #666;
+  float: left;
+  margin-left: 15rpx;
+  margin-top: 38rpx;
+}
+.songBtn{
+  width: 130rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 20rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+}
+.songBtnImg{
+  width: 130rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.songBtnTxt{
+  width: 130rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+}
+.lookmore{
+  height: 80rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #acacac;
+  position: relative
+}
+.loading{
+  width: 28rpx;
+  height: 30rpx;
+  left: 290rpx;
+  top: 27rpx;
+  position: absolute;
+  animation: 1s rainbow infinite linear;
+}
+@keyframes rainbow {
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+.tip{
+  font-size: 24rpx;
+  color: #9d9d9d;
+  text-align: center;
+  line-height: 80rpx;
+}
+.recommend{
+  padding-left: 18rpx;
+  padding-top: 20rpx;
+}
+.songSheet{
+  width: 220rpx;
+  height: 280rpx;
+  float: left;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.songImg{
+  width: 220rpx;
+  height: 220rpx;
+  display: block
+}
+.songTxt{
+  height: 60rpx;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+}
+.changeSong{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50rpx;
+  right: 20rpx;
+  font-size: 28rpx;
+  padding: 0;
+  text-align: center;
+  line-height: 120rpx;
+  color: #fff;
+  background: #ff6e00;
+}
+.changeSongImg{
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.changeSongTxt{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-
-
-
+.hoverClass{
+  width: 150rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+}

@@ -1,45 +1,83 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="swiper-tab">
-    <view wx:for="{{navList}}" class="swiper-tab-item {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item.name}}</view>
+<wxs module="filter" src="index.wxs"></wxs>
+<view class="container boxshow">
+  <view class='pay'>
+    <view class='erimg'>
+      <open-data type="userAvatarUrl" wx:if='{{usershow}}' class='userAvatarUrl'></open-data>
+      <image src='../../image/s.png' wx:if='{{ershow}}' class='userAvatarUrl' bindtap='Scavenging'></image>
+    </view>
+    <view class='weltxt' wx:if="{{welshow}}">欢迎使用KBOX</view>
+    <view class='tao' wx:if='{{tshow}}'>
+      <view class='ttop'>{{timeMark?"剩余时间:"+endTime+"分钟":"未购买套餐"}}</view>
+      <view class='tbot'>ID:{{id}}</view>
+    </view>
+    <view class='payBtn' bindtap='buy'>
+      <image src='../../image/p.png' class='pimg'></image>
+      <view class='ptxt'>购买套餐</view>
+    </view>
   </view>
-  <!-- <view class="section">
-    <input type='text' class='searchInput' placeholder='请输入搜索内容'/>
-  </view> -->
-  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-50}}px" bindchange="bindChange">
-    <swiper-item>
-      <view>
-        <view wx:for="{{hot}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
-          <image src='{{item.url}}' class='img'></image>
-          <text class='textval'>{{item.name}}</text>
-        </view>
+  <!-- header -->
+  <view class='header'>
+    <image src='../../image/big.png' class='big'></image>
+    <input class='search' value='搜索' bindtap='clickInput' disabled/>
+    <icon type="search" size="20" class='searchImg' color='#fff' />
+    <view class='haselect' bindtap='clickSelect'>
+      <image class='selectImg' src='../../image/select2.png'></image>
+      <view class='selectxt'>已点</view>
+      <view class='selectnum' wx:if="{{selectnum>0}}">{{selectnum}}</view>
+    </view>
+    <button open-type="share" class='shareBtn'>
+      <image src='../../image/share.png' class='shareImg'></image>
+      <view class='shareTxt'>分享</view>
+    </button>
+  </view>
+  <!-- bigBtn -->
+  <view class='bigBtn'>
+    <view class='leftBtn' bindtap='clickStar'>
+      <image src='../../image/b1.png' class='btnImg1'></image>
+      <view class='btnTxt'>歌星点歌</view>
+    </view>
+    <view class='rightBtn' bindtap='clickRank'>
+      <image src='../../image/b2.png' class='btnImg2'></image>
+      <view class='btnTxt'>排行榜</view>
+    </view>
+  </view>
+  <!-- 我的常唱 -->
+  <view class='mySong'>
+    <view class='mySongHead'>
+      <view class='headtxt'>我的常唱</view>
+    </view>
+    <view class='song' wx:for='{{myRegList}}'>
+      <view class='songInfo'>
+        <view class='songName'>{{item.name}}</view>
+        <view class='songer'>{{item.singer_names}}</view>
       </view>
-    </swiper-item>
-    <swiper-item>
-      <view>
-        <view wx:for="{{news}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
-          <image src='{{item.url}}' class='img'></image>
-          <text class='textval'>{{item.name}}</text>
-        </view>
+      <view class='songBtn' bindtap='chooseSong' data-songid='{{item.song_no}}'>
+        <image src='{{filter.getStyle(selectIdList,item.song_no)?"../../image/b4.png":"../../image/b3.png"}}' class='songBtnImg'></image>
+        <view class='songBtnTxt'>{{filter.getClickNum(selectIdList,item.song_no)==0?plus:mark+filter.getClickNum(selectIdList,item.song_no)}}</view>
       </view>
-    </swiper-item>
-    <swiper-item>
-      <view>
-        <view wx:for="{{certificates}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
-          <image src='{{item.url}}' class='img'></image>
-          <text class='textval'>{{item.name}}</text>
-        </view>
+    </view>
+    <view class='lookmore' wx:if='{{showtip}}'>
+      <image src='../../image/load.png' class='loading'></image>
+      <view class='tip'>加载中...</view>
+    </view>
+    <view class='lookmore' wx:if='{{showtip2}}' bindtap='lookMore'>查看更多</view>
+  </view>
+  <view class='line'></view>
+  <!-- 推荐歌单 -->
+  <view class='mySong2'>
+    <view class='mySongHead'>
+      <view class='headtxt'>推荐歌单</view>
+    </view>
+    <view class='recommend'>
+      <view class='songSheet' wx:for='{{recommend}}' bindtap='clickRecommend' data-albumid='{{item.albumid}}'>
+        <image class='songImg' src='{{"https://k3-mobile-new.leyecloud.com/media/"+item.image}}'></image>
+        <view class='songTxt'>{{item.title}}</view>
       </view>
-    </swiper-item>
-    <swiper-item>
-      <view>
-        <view wx:for="{{kuso}}" class='imgview' bindtap="clickBtn" data-location="{{item}}">
-          <image src='{{item.url}}' class='img'></image>
-          <text class='textval'>{{item.name}}</text>
-        </view>
-      </view>
-    </swiper-item>
-  </swiper>
-
-
+    </view>
+  </view>
+  <!-- 切歌 -->
+  <button class='changeSong' bindtap='changeSong' hover-class='hoverClass'>
+    切歌
+  </button>
 </view>

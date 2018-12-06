@@ -1,0 +1,31 @@
+<!-- boxlink -->
+<view class="container">
+  <view class='top'>
+    <view class='txt'>找到大屏幕上的“二维码” 扫码链接</view>
+  </view>
+  <image src='../../image/1.png' class='outimg'></image>
+  <view class='circle' bindtap='Scavenging'>
+    <image src='../../image/er.png' class='oimg'></image>
+    <view class='stxt'>扫一扫</view>
+  </view>
+  <!-- <view class='stxt2' bindtap='inBindnum'>或手动输入绑定码</view> -->
+
+  <!-- <view class='alert' wx:if="{{show1}}" bindtap='hideAlert'></view>
+  <view class='content' wx:if="{{show1}}">
+    <view class='ctxt'>请输入二维码下方的绑定码</view>
+    <input placeholder='请输入绑定码' class='inputs' bindinput='inputVal'/>
+    <view class='link' bindtap='clickLink'>
+      <image src='../../image/l.png' class='limg'></image>
+      <view class='ltxt'>连接包厢</view>
+    </view>
+  </view> -->
+
+  <view class='haslink' wx:if="{{show2}}">
+    <view class='hastxt'>包厢已连接</view>
+    <view class='hastxt2'>ID：<text class='hastxt3'>{{bindNum}}</text></view>
+    <view class='dbtn' bindtap='outlink'>
+      <image src='../../image/l.png' class='dimg'></image>
+      <view class='dtxt'>断开连接</view>
+    </view>
+  </view>
+</view>

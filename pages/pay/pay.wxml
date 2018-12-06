@@ -1,0 +1,41 @@
+<!--pages/pay/pay.wxml-->
+<view class='container'>
+  <image src='../../image/h.png' class='himg'></image>
+  <view class='t' bindtap='pay1' hover-class='bindhover'>
+    <view class='left'>
+      <image src='../../image/t1.png' class='t1'></image>
+    </view>
+    <view class='right'>
+      <view class='top'>套餐价格</view>
+      <view class='price'>￥{{onePrice}}</view>
+    </view>
+  </view>
+  <view class='t' bindtap='pay2' hover-class='bindhover'>
+    <view class='left'>
+      <image src='../../image/t2.png' class='t2'></image>
+    </view>
+    <view class='right'>
+      <view class='top'>套餐价格</view>
+      <view class='price'>￥{{twoPrice}}</view>
+    </view>
+  </view>
+  <view class='t' bindtap='pay3' hover-class='bindhover'>
+    <view class='left'>
+      <image src='../../image/t3.png' class='t3'></image>
+    </view>
+    <view class='right'>
+      <view class='top'>套餐价格</view>
+      <view class='price'>￥{{threePrice}}</view>
+    </view>
+  </view>
+  <view class='t' bindtap='pay4' hover-class='bindhover'>
+    <view class='left'>
+      <image src='../../image/t4.png' class='t4'></image>
+    </view>
+    <view class='right'>
+      <view class='top'>套餐价格</view>
+      <view class='price'>￥{{fourPrice}}</view>
+    </view>
+  </view>
+
+</view>

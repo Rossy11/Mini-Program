@@ -1,0 +1,50 @@
+<!--pages/selectsong/selectsong.wxml-->
+<view class='container boxshow selectbox'>
+  <view class='selsong' wx:if='{{showFirst}}'>
+    <view class='song'>{{playing.name}}
+      <text class='name'>{{playing.singer_names}}</text>
+    </view>
+    <view class='topview'>
+      <image src='../../image/pdong2.gif' class='pdong'></image>
+    </view>
+    <view class='topviewtxt'>
+      正在播放
+    </view>
+  </view>
+  <view class='selsong' wx:for='{{selectList}}'>
+    <view class='song'>{{item.name}}
+      <text class='name'>{{item.singer_names}}</text>
+    </view>
+    <!-- <image src='../../image/bl.png' class='play' data-idx="{{index}}" bindtap='plays'></image> -->
+    <view class='topview' data-idx="{{index+1}}" bindtap='settop' hover-class='hoverClass'>
+      <image src='../../image/zl.png' class='top'></image>
+    </view>
+    <view class='topview' data-idx="{{index+1}}" bindtap='delete' hover-class='hoverClass'>
+      <image src='../../image/ll.png' class='cancle'></image>
+    </view>
+  </view>
+  <view class='tiping'>
+    <image wx:if='{{showtip}}' src='../../image/load.png' class='loading'></image>
+    <view class='tip'>{{tip}}</view>
+  </view>
+
+  <!-- 切歌 -->
+  <button class='cbtn' bindtap='changeSong' hover-class='cbtnhoverClass'>
+    切歌
+  </button>
+
+  <view class='footer'>
+    <view class='chooseSong' bindtap='clickChoose'>
+      <image src='../../image/a2.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt'>点歌</view>
+    </view>
+    <view class='chooseSong' bindtap='clickControl'>
+      <image src='../../image/a6.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>遥控</view>
+    </view>
+    <view class='chooseSong' bindtap='clickLink'>
+      <image src='../../image/a4.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>链接</view>
+    </view>
+  </view>
+</view>

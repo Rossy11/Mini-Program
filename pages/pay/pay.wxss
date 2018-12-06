@@ -1,0 +1,60 @@
+/* pages/pay/pay.wxss */
+.himg{
+  width: 750rpx;
+  height: 302rpx;
+}
+.t{
+  width: 710rpx;
+  height: 180rpx;
+  border: 1px solid #f0f0f0;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  box-shadow: 0px 1px 5px #ededed;
+  overflow: hidden;
+}
+.bindhover{
+  border: 1px solid #ff6e00;
+}
+.left{
+  width: 180rpx;
+  height: 180rpx;
+  float: left;
+  background: #ffdfbf;
+}
+.right{
+  float: left;
+  margin-left: 20rpx;
+}
+.top{
+  font-size: 26rpx;
+  color: #999999;
+  line-height: 90rpx;
+}
+.price{
+  font-size: 40rpx;
+}
+.t1{
+  width: 112rpx;
+  height: 114rpx;
+  margin-left: 45rpx;
+  margin-top: 30rpx;
+}
+.t2{
+  width: 114rpx;
+  height: 124rpx;
+  margin-left: 45rpx;
+  margin-top: 25rpx;
+}
+.t3{
+  width: 124rpx;
+  height: 124rpx;
+  margin-left: 35rpx;
+  margin-top: 25rpx;
+}
+.t4{
+  width: 124rpx;
+  height: 126rpx;
+  margin-left: 35rpx;
+  margin-top: 25rpx;
+}

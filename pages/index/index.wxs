@@ -1,0 +1,27 @@
+var filter = {
+  getStyle: function(arr, value) {
+    if (arr.indexOf(value) > -1) {
+      return true
+    } else {
+      return false
+    }
+  },
+  getClickNum: function(arr, value) {
+    var num = 0;
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] == value) {
+        num += 1;
+      }
+    }
+    return num
+  },
+  splitStr:function(str){
+    return str.split(",")[0]
+  }
+}
+
+module.exports = {
+  getStyle: filter.getStyle,
+  getClickNum: filter.getClickNum,
+  splitStr: filter.splitStr
+}

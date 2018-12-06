@@ -1,0 +1,62 @@
+<!--pages/star/star.wxml-->
+<wxs module="filter" src="../index/index.wxs"></wxs>
+<view class="container">
+  <view class='header'>
+    <input class='search' placeholder='搜索'  bindtap='clickInput' disabled/>
+    <icon type="search" size="20" class='searchImg' color='#c4c4c4' />
+    <icon type="clear" size="18" class='searchImg2' color='#c4c4c4' />
+    <view class='haselect' bindtap='clickSelect'>
+      <image class='selectImg' src='../../image/select.png'></image>
+      <view class='selectxt'>已点</view>
+      <!-- <view class='selectnum' wx:if='{{selectnum>0}}'>{{selectnum}}</view> -->
+    </view>
+  </view>
+  <!-- 热门歌星 -->
+  <view>
+    <view class='title'>热门歌星</view>
+    <view class='viewH'>
+      <view wx:for='{{hotStar}}' data-name='{{item.singer_names}}' class="scroll-view-item_H" bindtap='clickHotstar'>
+        <image src='{{"http://180.97.83.70/resource/kshow_v3/res_songs/res_aam/singer/"+filter.splitStr(item.singer_ids)+"/"+filter.splitStr(item.singer_ids)+"_1.png"}}' class='songname'></image>
+        <view class='songer'>{{item.singer_names}}</view>
+      </view>
+    </view>
+
+    <!-- <view class='line'></view> -->
+    <view wx:if="{{false}}">
+      <view class='group' data-typeSinger='1' bindtap='clicktypestar'>
+        <view class='names'>内地歌星</view>
+        <image src='../../image/you.png' class='rightImg'></image>
+      </view>
+      <view class='group' data-typeSinger='2' bindtap='clicktypestar'>
+        <view class='names'>港台歌手</view>
+        <image src='../../image/you.png' class='rightImg'></image>
+      </view>
+      <view class='group' data-typeSinger='3' bindtap='clicktypestar'>
+        <view class='names'>日韩歌手</view>
+        <image src='../../image/you.png' class='rightImg'></image>
+      </view>
+      <view class='group' data-typeSinger='4' bindtap='clicktypestar'>
+        <view class='names'>欧美歌星</view>
+        <image src='../../image/you.png' class='rightImg'></image>
+      </view>
+    </view>
+
+  </view>
+
+
+
+  <view class='footer'>
+    <view class='chooseSong' bindtap='clickChoose'>
+      <image src='../../image/a2.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt'>点歌</view>
+    </view>
+    <view class='chooseSong' bindtap='clickControl'>
+      <image src='../../image/a6.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>遥控</view>
+    </view>
+    <view class='chooseSong' bindtap='clickLink'>
+      <image src='../../image/a4.png' class='chooseSongImg'></image>
+      <view class='chooseSongTxt2'>链接</view>
+    </view>
+  </view>
+</view>

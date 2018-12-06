@@ -1,0 +1,164 @@
+/* pages/star/star.wxss */
+.header{
+  height: 60rpx;
+  position: relative;
+  margin-top: 20rpx;
+}
+.search{
+  width: 450rpx;
+  height: 60rpx;
+  border: 1px solid #eaeaea;
+  padding-left: 60rpx;
+  color: #eaeaea;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  border-radius: 30rpx;
+}
+.searchImg{
+  position: absolute;
+  top: 15rpx;
+  left: 30rpx;
+}
+.searchImg2{
+  position: absolute;
+  top: 15rpx;
+  right: 250rpx;
+}
+/* bitton去掉边框 */
+button::after{ 
+  display: none;
+}
+.haselect{
+  width: 160rpx;
+  height: 60rpx;
+  border: 1px solid #eaeaea;
+  border-radius: 30rpx;
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+}
+.selectImg{
+  width: 34rpx;
+  height: 38rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 20rpx
+}
+.selectxt{
+  font-size: 24rpx;
+  float: left;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+  color: #a1a1a1;
+}
+.selectnum{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #ff8b2b;
+  font-size: 22rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 40rpx;
+  position: absolute;
+  top: -20rpx;
+  right: -10rpx;
+}
+.title{
+  width: 400rpx;
+  font-size: 30rpx;
+  border-left: 6rpx #ff6e00 solid;
+  margin:30rpx 20rpx 0;
+  padding-left: 10rpx;
+}
+.scroll-view_H{
+  /* height: 180rpx; */
+  padding-top: 40rpx;
+  white-space: nowrap;
+}
+.viewH{
+  margin-bottom: 100rpx;
+  padding-top: 20rpx;
+}
+.scroll-view-item_H{
+  width: 100rpx;
+  height: 150rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  display: inline-block
+}
+.songname{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+.songer{
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.line{
+  height: 20rpx;
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+  background: #f5f5f5;
+}
+.group{
+  height: 110rpx;
+  border-bottom: 4rpx #f6f6f6 solid;
+}
+.names{
+  float: left;
+  font-size: 30rpx;
+  line-height: 110rpx;
+  margin-left: 20rpx;
+}
+.rightImg{
+  float: right;
+  width: 18rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+  margin-top: 40rpx;
+}
+
+
+
+
+
+/* footer */
+.footer{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px #eeeeee solid;
+  background: #fff;
+}
+.chooseSong{
+  width: 33.33%;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+  padding-top: 14rpx;
+}
+.chooseSongImg{
+  width: 58rpx;
+  height: 58rpx;
+}
+.chooseSongTxt{
+  font-size: 22rpx;
+  text-align: center;
+  color:#fe882d;
+  margin-top: -12rpx;
+}
+.chooseSongTxt2{
+  font-size: 22rpx;
+  text-align: center;
+  color:#b1b1b1;
+  margin-top: -12rpx;
+}

@@ -1,0 +1,155 @@
+.top{
+  height: 706rpx;
+  background: #ffdec3;
+  text-align: center;
+  font-size: 32rpx;
+}
+.txt{
+  float: left;
+  margin-top: 270rpx;
+  width: 412rpx;
+  text-align: center;
+  margin-left: 184rpx;
+  line-height: 50rpx;
+}
+.outimg{
+  width: 572rpx;
+  height: 256rpx;
+  position: fixed;
+  top: 450rpx;
+  left: 90rpx;
+}
+.circle{
+  width: 312rpx;
+  height: 312rpx;
+  background: #fff;
+  border-radius: 50%;
+  position: fixed;
+  top: 580rpx;
+  left: 220rpx;
+}
+.oimg{
+  width: 296rpx;
+  height: 296rpx;
+  position: absolute;
+  top: 8rpx;
+  left: 8rpx;
+}
+.stxt{
+  font-size: 30rpx;
+  color: #ff6e00;
+  position: absolute;
+  top: 225rpx;
+  left: 110rpx;
+}
+.stxt2{
+  font-size: 30rpx;
+  position: fixed;
+  top: 900rpx;
+  left: 250rpx;
+}
+.alert{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+}
+.content{
+  width: 540rpx;
+  height: 380rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  position: fixed;
+  top: 386rpx;
+  left: 106rpx;
+}
+.ctxt{
+  text-align: center;
+  font-size: 26rpx;
+  margin-top: 48rpx;
+}
+.inputs{
+  width: 414rpx;
+  height: 80rpx;
+  border: 1px solid #979797;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  margin-top: 68rpx;
+  margin-left: 64rpx;
+  text-align: center;
+}
+.link{
+  width: 414rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 64rpx;
+  text-align: center;
+  position: relative;
+}
+.limg{
+  width: 414rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ltxt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 80rpx;
+  width: 414rpx;
+}
+.haslink{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.hastxt{
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 340rpx;
+}
+.hastxt2{
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 60rpx;
+}
+.hastxt3{
+  color: #ff7003
+}
+.dbtn{
+  width: 414rpx;
+  height: 80rpx;
+  margin-left: 170rpx;
+  margin-top: 160rpx;
+  position: relative;
+}
+.dimg{
+  width: 414rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dtxt{
+  position: absolute;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 80rpx;
+  width: 414rpx;
+  text-align: center;
+}
+
+
+

@@ -1,16 +1,45 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/detail/detail"
+    "pages/control/control",
+    "pages/boxlink/boxlink",
+    "pages/detail/detail",
+    "pages/star/star",
+    "pages/search/search",
+    "pages/rank/rank",
+    "pages/selectsong/selectsong",
+    "pages/singer/singer",
+    "pages/pay/pay"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "selectedColor": "#ff6e00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "点歌",
+        "iconPath": "image/a1.png",
+        "selectedIconPath": "image/a2.png"
+      },
+      {
+        "pagePath": "pages/control/control",
+        "text": "遥控",
+        "iconPath": "image/a6.png",
+        "selectedIconPath": "image/a5.png"
+      },
+      {
+        "pagePath": "pages/boxlink/boxlink",
+        "text": "链接",
+        "iconPath": "image/a4.png",
+        "selectedIconPath": "image/a3.png"
+      }
+    ]
   }
 }

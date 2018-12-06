@@ -1,0 +1,133 @@
+/* pages/selectsong/selectsong.wxss */
+.selectbox{
+  padding-bottom: 100rpx;
+}
+.selsong{
+  height: 110rpx;
+  border-bottom: 4rpx #f6f6f6 solid;
+}
+.song{
+  line-height: 110rpx;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  float: left;
+  width: 496rpx;
+}
+.name{
+  font-size: 24rpx;
+  color: #bbbbbb;
+  margin-left: 20rpx;
+}
+.play{
+  width: 24rpx;
+  height: 34rpx;
+  margin-top: 44rpx;
+  float: left;
+}
+
+.hoverClass{
+  background: #FFDEC3;
+}
+.pdong{
+  width: 50rpx;
+  height: 40rpx;
+}
+.topviewtxt{
+  float: left;
+  width: 110rpx;
+  height: 100%;
+  line-height: 120rpx;
+  font-size: 22rpx;
+  color: #ff6e00;
+}
+.topview{
+  float: left;
+  width: 110rpx;
+  height: 100%;
+  text-align: center;
+  line-height: 120rpx;
+}
+.top{
+  width: 32rpx;
+  height: 34rpx;
+}
+.cancle{
+  width: 30rpx;
+  height: 38rpx;
+}
+.tiping{
+  position: relative;
+}
+.loading{
+  width: 28rpx;
+  height: 30rpx;
+  left: 270rpx;
+  top: 37rpx;
+  position: absolute;
+  animation: 1s rainbow infinite linear;
+}
+@keyframes rainbow {
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+.tip{
+  font-size: 24rpx;
+  color: #9d9d9d;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+
+
+/* footer */
+.footer{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px #eeeeee solid;
+  background: #fff;
+}
+.chooseSong{
+  width: 33.33%;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+  padding-top: 14rpx;
+}
+.chooseSongImg{
+  width: 58rpx;
+  height: 58rpx;
+}
+.chooseSongTxt{
+  font-size: 22rpx;
+  text-align: center;
+  color:#fe882d;
+  margin-top: -12rpx;
+}
+.chooseSongTxt2{
+  font-size: 22rpx;
+  text-align: center;
+  color:#b1b1b1;
+  margin-top: -12rpx;
+}
+
+.cbtn{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 150rpx;
+  right: 30rpx;
+  font-size: 28rpx;
+  padding: 0;
+  text-align: center;
+  line-height: 120rpx;
+  color: #fff;
+  background: #ff6e00;
+}
+.cbtnhoverClass{
+  width: 150rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+}
