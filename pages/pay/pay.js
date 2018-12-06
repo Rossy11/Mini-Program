@@ -52,7 +52,7 @@ Page({
   pay:function(num,id,time){
     console.log("请求开始")
     wx.request({
-      url: "https://k3-mobile.leyecloud.com/les/release/musicpro/center/app_pay.php",
+      url: "xxxxxxxxxx",
       data: {
         cmd: 'pay',
         roomKey: app.globalData.mid,
