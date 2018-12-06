@@ -4,7 +4,7 @@ App({
      
   },
   globalData: {
-    url: "https://k3-mobile-new.leyecloud.com/center/songdesk/", //url
+    url: "xxxxx", //url
     link:false, //是否连接房间
     openid:null, //用户唯一id
     mid: 111111, //默认房间认证码
